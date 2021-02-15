@@ -106,5 +106,5 @@ let c:a = "JavaScript" // 컴파일 에러
 ### 정리
 
 * TypeScript에서의 type은 수학에서의 집합으로 바라볼 수 있다.
-* TypeScript에서 변수의 type을 지정한다는 것은 그 변수가 갖을 수 있는 값을 해당 type의 원소로 한정한다는 뜻이다.
+* TypeScript에서 변수의 type을 지정한다는 것은 그 변수가 가 수 있는 값을 해당 type의 원소로 한정한다는 뜻이다.
 
