@@ -1,4 +1,4 @@
-# TypeScript에서 Type이란?
+# 수학적 집합으로서의 타입
 
 ## Type이란?
 
@@ -107,6 +107,4 @@ let c:a = "JavaScript" // 컴파일 에러
 
 * TypeScript에서의 type은 수학에서의 집합으로 바라볼 수 있다.
 * TypeScript에서 변수의 type을 지정한다는 것은 그 변수가 갖을 수 있는 값을 해당 type의 원소로 한정한다는 뜻이다.
-
-다음 글에서는 TypeScript에서 `type` 키워드를 이용하여 다양하게 집합을 정의하는 방법에 대해서 다루어 보겠다.
 
