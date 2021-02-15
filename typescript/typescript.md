@@ -85,7 +85,7 @@ TypeScript의 공식 홈페이지에 가면 `Typed JavaScript at any scale`이�
 
 ### TypeScript 배울까 말까?
 
-Node.js, Express.js NestJs 등으로 인해서 JavaScript의 영역이 Backend까지 확대 되었고 이제는 명실공히 Java와 어깨를 나란히 할 만한 언어이다. 하지만 JavaScript는 대규모 프로젝트에는 적합하지 않다고 보는 시각이 있다. 하지만 TypeScript를 사용한다면 대규모 프로젝트도 무리없다. 
+Node.js, Express.js NestJs 등으로 인해서 JavaScript의 영역이 Backend까지 확대 되었고 이제는 명실공히 Java와 어깨를 나란히 할 만한 언어이다. 하지만 JavaScript는 대규모 프로젝트에는 적합하지 않다고 보는 시각이 있다. TypeScript를 사용한다면 대규모 프로젝트도 무리없다. 
 
-언젠가 한번은 어느 외국 블로그에서 굳이 왜 TypeScript를 써야 하는지 모르겠고 너무 불편하다고 토로하는 글을 본 적이 있다. 물론 TypeScript를 쓰게 되면 타입에 대한 정보를 입력해야 하므로 작업량이 늘어 난다. 그럼에도 대규모 프로젝트에서는 필수적이며, 소규모 개인 프로젝트에서도 이왕이면 쓰는 것이 훨씬 좋다. 
+언젠가 한번은 어느 외국 블로그에서 굳이 왜 TypeScript를 써야 하는지 모르겠고 너무 불편하다고 토로하는 글을 본 적이 있다. 물론 TypeScript를 쓰게 되면 타입에 대한 정보를 입력해야 하므로 작업량이 늘어 난다. Type을 정의하기 위해서 들어가는 노력은 IDE의 자동 완성 기능이 주는 유용함으로 상쇄된다. 대규모 프로젝트에서는 필수적이며, 소규모 개인 프로젝트에서도 이왕이면 쓰는 것이 훨씬 좋다. 
 
