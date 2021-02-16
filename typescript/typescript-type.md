@@ -26,11 +26,13 @@ Type은 수학에서 말하는 집합\(set\)이라고 볼 수 있다. [위키피
 ```text
 MyFavoriteThings = { "TypeScript", "Java", "C++", "C#", "C" }
 ```
+>위 표기법은 수학에서 쓰는 집합 표기법이다. TypeScript와는 상관없다.
 
 위와 같이 정의하면 MyFavoriteThings는 수학에서 말하는 집합의 정의에 부합한다. MyFavoriteThings는 원소로써 "TypeScript", "Java", "C++", "C\#", "C"를 갖는다.
 
 {% hint style="info" %}
-모든 수학적 집합을 TypeScript에서 표현할 수 있는 것은 아니다. TypeScript에서 표현할 수 있는 집합은 프로그램적으로 의미있는 집합들 뿐이다.
+모든 수학적 집합을 TypeScript에서 type으로 표현할 수 있는 것은 아니다. 하지만 TypeScript에서의 모든 type은 수학적 집합이다라는 말은 거의 참이다.
+(참이면 참이고 거짓이면 거짓이지 거의 참인 것은 무엇일까? 이것은 any 타입에 관해서 이야기할 때 자세히 설명하겠다.)
 {% endhint %}
 
 ### TypeScript에서의 집합
