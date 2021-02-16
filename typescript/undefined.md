@@ -4,7 +4,7 @@
 또한 타입과 집합은 같은 의미로 혼용하여 사용하겠다. 별다른 언급이 없으면 두 가지를 동일한 것으로 보아도 좋다.
 
 프로그래밍에서 `x는 number 타입이다.`라는 식의 표현이 있다. 
-이 말을 타입은 집합이다라는 관점에서 더욱 정확히 표현하면 `x는 number 타입의 원소이다.`가 된다.
+이 말을 타입은 집합이다라는 관점에서 더욱 정확히 표현하면 `x는 number 타입의 원소이다.` 혹은 `x는 number 타입에 속한다`가 된다.
 여기서는 용어를 엄밀히 사용하기 위해서 후자의 표현을 쓰도록 하겠다.
 
 
@@ -54,7 +54,7 @@ let name3: string = `I-U`;
 배열은 순서가 있는 원소들의 모임이다. 이때 원소는 아무 타입의 원소나 될 수 있다. 
 즉, TypeScript에서 표현할 수 있는 어떤 타입(집합)의 원소이든 배열의 원소가 될 수 있다.
 
-대부분의 경우에 Array의 원소들은 한가지 타입인 경우가 많다. 예를들어 각 원소가 number 타입인 경우 아래와 표현한다.
+대부분의 경우에 Array의 원소들은 한가지 타입인 경우가 많다. 예를들어 각 원소가 모두 number 타입인 경우 아래와 표현한다.
 
 ```typescript
 let arr: number[] = [1,2,3];
@@ -67,7 +67,9 @@ let arr: Array<number> = [1,2,3];
 ``` 
 
 ## Tuple
-원래 JavaScript에는 Tuple이라는 개념이 없다. TypeScript에서만 있는 가상적인 타입이다.
+원래 JavaScript에는 Tuple이라는 개념이 없다. Tuple은 TypeScript에서만 있는 가상적인 타입이다.
+TypeScript 코드가 JavaScript로 컴파일되면(혹은 transpile 되면) 공기처럼 사라져 버리는 개념이다.
+
 Tuple 타입은 Array 타입의 subtype이다. 즉, 부분 집합이다.
 
 Tuple은 원소수가 한정된 Array라고 볼 수 있다. 아래와 같이 타입을 정의한다.
@@ -82,3 +84,40 @@ let tup: [number, string] = [0, "zero"];
 tup = ["zero", true]; // 오류 발생
 ```
 위와 같이 `[number, string]` 타입이 아닌 값을 할당하면 오류가 발생한다. 
+
+## Enum
+원래 JavaScript에는 Enum이라는 개념이 없다. Enum 타입은 TypeScript에서만 있는 가상적인 타입이다.
+
+enum 타입은 아래와 같이 정의한다.
+
+```typescript
+enum Lang {
+  JavaScript,
+  TypeScript,
+  Java,
+  CSharp,
+}
+```
+위와 같이 Enum 타입을 선언하면 0부터 차례대로 정수 값이 부여 된다. 
+즉, JavaScript = 0, TypeScript = 1, Java = 2, CSharp =3 이다.
+
+TypeScript에서는 사실 Enum 타입과 number 타입을 동일시 한다. 
+다시 말해서 Enum 타입의 원소를 number 타입의 변수에 할당할 수 있고 그 반대도 가능하다.
+
+```typescript
+let lang: Lang = Lang.JavaScript;
+let num: number = lang;
+
+```
+
+한편, Enum 타입의 각 원소는 string으로도 선언할 수 있다. 
+```typescript
+enum Lang {
+  JavaScript = "JavaScript",
+  TypeScript = "TypeScript",
+  Java = "Java",
+  CSharp = "CSharp",
+}
+```
+위와 같이 Enum의 각 원소를 sring으로 선언한 경우에는 TypeScript는 Lang 타입을 number 타입과 동일시 하지 않는다.
+
