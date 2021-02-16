@@ -120,4 +120,5 @@ enum Lang {
 }
 ```
 위와 같이 Enum의 각 원소를 sring으로 선언한 경우에는 TypeScript는 Lang 타입을 number 타입과 동일시 하지 않는다.
+그렇다고 string 타입과 동일시 하지도 않는다.
 
